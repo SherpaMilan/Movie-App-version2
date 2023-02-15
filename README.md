@@ -1,5 +1,5 @@
-Created New brnach named div in the main branch
+Created New branch named div in the main branch
 
 ....
-########
-**\*\*\*** Practicing New Branch in git hub
+
+Practicing New Branch in git hub
