@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { useEffect } from "react";
 import CustomCard from "./CustomCard";
 import { Button, ButtonGroup } from "react-bootstrap";
 import { useState } from "react";
@@ -38,7 +39,7 @@ const ListCounter = ({ movieList, removeMovie }) => {
       <hr />
 
       <div className="list d-flex flex-wrap justify-content-around gap-2">
-        {movieList.map((item, i) => (
+        {display.map((item, i) => (
           <CustomCard key={i} movie={item} removeDisplay={removeMovie} />
         ))}
       </div>
