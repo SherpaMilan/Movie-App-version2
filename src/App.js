@@ -22,21 +22,27 @@ function App() {
   };
 
   return (
-    <div className="wrapper bg-dark text-warning pt-5">
-      <Container>
-        <h3 className="text-center">My Movie collection</h3>
-        <hr />
+    <>
+      <div className="wrapper bg-dark text-warning pt-5">
+        <Container>
+          <h3 className="text-center">My Movie collection</h3>
+          <hr />
 
-        {/* form section */}
-        <SearchForm addMovie={addMovie} />
-        {/* card section */}
+          {/* form section */}
+          <SearchForm addMovie={addMovie} />
+          {/* card section */}
 
-        {/* list section */}
-        <ListCounter movieList={movieList} removeMovie={removeMovie} />
-        {/* Buttons */}
-        {/* move lists */}
-      </Container>
-    </div>
+          {/* list section */}
+          <ListCounter movieList={movieList} removeMovie={removeMovie} />
+          {/* Buttons */}
+          {/* move lists */}
+        </Container>
+      </div>
+      <footer className="text-center bg-dark p-3 text-light">
+        Copyright © 2023 my-movie-app-cyan.vercel.app. All rights reserved
+      </footer>
+      ;
+    </>
   );
 }
 
